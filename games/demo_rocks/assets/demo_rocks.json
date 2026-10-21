@@ -1,0 +1,39 @@
+{
+  "player": {
+    "speed": 6,
+    "boost": 5,
+    "climb": 4,
+    "clear": 0.5,
+    "ceiling": 400,
+    "reach": 2000,
+    "pace": { "min": 0.1, "max": 10, "step": 0.0015 },
+    "camera": { "minPitch": -1.5, "maxPitch": 1.5 },
+    "sens": 0.0025,
+    "keys": {
+      "stick": ["a", "d", "w", "s"],
+      "up": [" "],
+      "down": ["c"],
+      "fast": ["Shift"],
+      "drag": "Mouse2",
+      "mode": "m",
+      "lod": "l",
+      "lods": ["0", "1", "2", "3"],
+      "auto": "9",
+      "next": "]",
+      "previous": "["
+    }
+  },
+  "lineup": {
+    "model": "rocks",
+    "rocks": ["boulder1", "boulder2", "boulder3", "slab1", "slab2", "slab3", "outcrop1", "outcrop2", "outcrop3"],
+    "lods": 4,
+    "shells": [40, 100, 220],
+    "gap": 2,
+    "ground": { "size": 4000, "colour": "#6b7a4a" },
+    "hemi": { "sky": "#dfe9f5", "ground": "#4a4636", "intensity": 1.1 },
+    "sun": { "colour": "#fff1dc", "intensity": 2.6, "from": [-0.5, 1, -0.6], "shadow": { "map": 4096, "half": 50, "far": 300, "bias": -0.0002 } },
+    "label": { "below": 0.6 },
+    "caption": { "title": [0, 0], "lines": [0, 30], "line": 18 },
+    "help": "WASD fly  Space/C up/down  Shift fast  wheel pace  right-drag look  M lineup/LODs  L next LOD  0-3 LOD  9 by distance  [ ] rock"
+  }
+}

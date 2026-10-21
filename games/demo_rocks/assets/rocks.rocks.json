@@ -1,0 +1,20 @@
+{
+  "rocks": {
+    "boulder1": { "species": "boulder", "seed": 1, "size": 1.4 },
+    "boulder2": { "species": "boulder", "seed": 2, "size": 2.2 },
+    "boulder3": { "species": "boulder", "seed": 3, "size": 3.2 },
+    "slab1": { "species": "slab", "seed": 1, "size": 2.4 },
+    "slab2": { "species": "slab", "seed": 2, "size": 3.4 },
+    "slab3": { "species": "slab", "seed": 3, "size": 4.6 },
+    "outcrop1": { "species": "outcrop", "seed": 1, "size": 5 },
+    "outcrop2": { "species": "outcrop", "seed": 2, "size": 7 },
+    "outcrop3": { "species": "outcrop", "seed": 3, "size": 9 }
+  },
+  "lods": [
+    { "name": "0", "tris": 2000, "pixels": 1024 },
+    { "name": "1", "tris": 600, "pixels": 512 },
+    { "name": "2", "tris": 160, "pixels": 256 },
+    { "name": "3", "tris": 40, "pixels": 128 }
+  ],
+  "node": "{rock}-{lod}"
+}

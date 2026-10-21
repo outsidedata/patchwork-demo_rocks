@@ -1,0 +1,63 @@
+{
+  "world": {
+    "predict": { "epsilon": 0.000001, "cutoff": 60, "halflife": 100, "snap": 5, "below": 0.0001 },
+    "defs": "demo_rocks",
+    "loader": {
+      "assets": {
+        "demo_rocks": { "type": "json", "url": "/games/demo_rocks/assets/demo_rocks.json", "preload": true },
+        "rocks": { "type": "model", "url": "/games/demo_rocks/assets/rocks.glb", "preload": true }
+      }
+    },
+    "ui": {
+      "panels": {
+        "caption": { "anchor": "top-left", "at": [16, 16], "size": [760, 140], "layer": 0 },
+        "labels": { "anchor": "top-left", "size": [1280, 720], "layer": 0 }
+      },
+      "keys": { "up": "ArrowUp", "down": "ArrowDown", "left": "ArrowLeft", "right": "ArrowRight", "press": ["Enter"], "back": "Escape" },
+      "styles": {
+        "caption.title": { "fontFamily": "monospace", "fontSize": 20, "fontWeight": "bold", "fill": 16765562, "stroke": { "color": 0, "width": 4, "join": "round" } },
+        "caption.text": { "fontFamily": "monospace", "fontSize": 14, "fill": 15658734, "stroke": { "color": 0, "width": 3, "join": "round" } },
+        "caption.keys": { "fontFamily": "monospace", "fontSize": 12, "fill": 11184810, "stroke": { "color": 0, "width": 3, "join": "round" } },
+        "label": { "fontFamily": "monospace", "fontSize": 13, "fill": 16777215, "align": "center", "stroke": { "color": 0, "width": 3, "join": "round" } }
+      }
+    }
+  },
+  "plugins": ["loader", "scenemanager", "player", "render3d", "chasecamera3d", "ui"],
+  "seats": 1,
+  "prefabs": {
+    "engine": { "dt": 0.016666666666666666, "width": 1280, "height": 720 },
+    "scenemanager": { "out": {} },
+    "loader": {},
+    "render3d": {
+      "camera": { "fov": 55, "near": 0.1, "far": 3000, "at": [0, 4, -30], "look": [0, 2, 0] },
+      "pixelRatio": 2,
+      "tone": "neutral",
+      "exposure": 1,
+      "shadows": "soft",
+      "background": "#a9c3dc"
+    },
+    "start": { "slot": 0, "at": [0, 0], "up": 3, "yaw": 0, "pitch": 0.08 },
+    "player": {
+      "seat": 0,
+      "stood": false,
+      "pos": [0, 0, 0],
+      "look": { "yaw": 0, "pitch": 0.08, "dist": 0.1 },
+      "lift": 0,
+      "stick": [0, 0],
+      "up": false,
+      "down": false,
+      "fast": false,
+      "pace": 1,
+      "mode": "lineup",
+      "lod": 0,
+      "rock": 0
+    },
+    "lineup": {}
+  },
+  "actors": [
+    { "is": "scenemanager" },
+    { "is": "loader" },
+    { "is": "lineup" },
+    { "is": "start", "slot": 0, "at": [0, -30], "up": 3, "yaw": 0, "pitch": 0.08 }
+  ]
+}
